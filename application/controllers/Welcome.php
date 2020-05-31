@@ -45,11 +45,19 @@ class Welcome extends CI_Controller {
 		}
 		else
 		{
+//			Set Session
+			$_SESSION['username']=$username;
 			redirect(base_url('dashboard'), 'refresh');
 		}
 
 
 
 //		echo $username;
+	}
+
+	public function logout()
+	{
+		session_destroy();
+		redirect(base_url('welcome'), 'refresh');
 	}
 }

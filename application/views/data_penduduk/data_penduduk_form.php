@@ -1,3 +1,15 @@
+<?php
+
+if(isset($_SESSION['username']))
+{
+
+}
+else
+{
+	header('Location:'.base_url());
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,10 +110,12 @@
 				<!--				Form Input Disini-->
 				<b>Tambahkan Data Penduduk</b>
 				<br/>
+
+
 				<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="varchar">Username <?php echo form_error('username') ?></label>
-						<input type="text" class="form-control" name="username" id="username" placeholder="Username" value="<?php echo $username; ?>" />
+						<input type="hidden" class="form-control" name="username" id="username" placeholder="Username" value="<?php echo $_SESSION['username']; ?>" />
 					</div>
 					<div class="form-group">
 						<label for="varchar">NIK <?php echo form_error('NIK') ?></label>
@@ -177,7 +191,7 @@
 			<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
 			<div class="modal-footer">
 				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-				<a class="btn btn-primary" href="login.html">Logout</a>
+				<a class="btn btn-primary" href="<?php echo base_url('welcome/logout') ?>">Logout</a>
 			</div>
 		</div>
 	</div>
