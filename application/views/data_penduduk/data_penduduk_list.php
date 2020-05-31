@@ -34,13 +34,13 @@
 
 
 	<!-- Content Wrapper -->
-	<div id="content-wrapper" class="d-flex flex-column">
+	<div id="content-wrapper" class="d-flex flex-column" style="background-color: #0b2e13">
 
 		<!-- Main Content -->
 		<div id="content">
 
 			<!-- Topbar -->
-			<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+			<nav class="navbar navbar-expand navbar-light  topbar mb-4 static-top shadow" style="background-color: #D0DBC2">
 
 				<!-- Sidebar Toggle (Topbar) -->
 				<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -110,39 +110,22 @@
 
 					<div class="col-xl-3 col-md-6 mb-4">
 						<div class="card border-left-primary shadow h-100 py-2">
-							<div class="card-body" style="background-color: #D0DBC2">
+							<div class="card-body">
 								<div class="row no-gutters align-items-center">
-									<form class="align-items-center" action="<?= base_url('dashboard') ?>" method="post">
+									<form style="margin:10px;" class="align-items-center" action="<?= base_url('dashboard') ?>" method="post">
 										<button class="btn btn-info" style="width: 100%;height: 100%;background-color: #D0DBC2;border-color: #DEEFFF;color:black;"><b>Home</b></button>
 									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-md-6 mb-4">
-						<div class="card border-left-primary shadow h-100 py-2">
-							<div class="card-body" style="background-color: #D0DBC2">
-								<div class="row no-gutters align-items-center">
-									<form class="align-items-center" action="<?= base_url('data_penduduk') ?>" method="post">
-										<button class="btn btn-info" style="width: 100%;height: 100%;background-color: #D0DBC2;border-color: #DEEFFF;color:black;"><b>Lihat Data</b></button>
+									<form style="margin:10px;"  class="align-items-center" action="<?= base_url('data_penduduk') ?>" method="post">
+										<button class="btn btn-info" style="width: 100%;height: 100%;background-color: #D0DBC2;border-color: #DEEFFF;color:black;"><b>Survei</b></button>
+									</form>
+									<form style="margin:10px;"  class="align-items-center" action="<?= base_url('user') ?>" method="post">
+										<button class="btn btn-info" style="width: 100%;height: 100%;background-color: #D0DBC2;border-color: #DEEFFF;color:black;"><b>User</b></button>
 									</form>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-xl-3 col-md-6 mb-4">
-						<div class="card border-left-primary shadow h-100 py-2">
-							<div class="card-body" style="background-color: #D0DBC2">
-								<div class="row no-gutters align-items-center">
-									<form class="row no-gutters align-items-center" action="<?= base_url('data_penduduk/create') ?>" method="post">
-										<button class="btn btn-info" style="width: 100%;height: 100%;background-color: #D0DBC2;border-color: #DEEFFF;color:black;"><b>Tambah Data</b></button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
 
 				</div>
 
