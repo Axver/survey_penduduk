@@ -189,7 +189,7 @@
 									<tr>
 										<th>No</th>
 										<th>Username</th>
-										<th>Password</th>
+										<th>Password (Encrypted)</th>
 										<th>Action</th>
 									</tr><?php
 									foreach ($user_data as $user)
