@@ -22,6 +22,7 @@ else
 	<meta name="description" content="">
 	<meta name="author" content="">
 
+
 	<title>Dashboard Data Admin</title>
 
 	<!-- Custom fonts for this template-->
@@ -30,10 +31,16 @@ else
 
 	<!-- Custom styles for this template-->
 	<link href="<?= base_url('dashboard_assets/css/sb-admin-2.min.css') ?>" rel="stylesheet">
+	<script>
+		
+	</script>
+
 
 </head>
 
 <body id="page-top" >
+
+
 
 <!-- Page Wrapper -->
 <div id="wrapper">
